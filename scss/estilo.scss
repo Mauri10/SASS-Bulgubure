@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$colTentate: #C69B7B;
+$colLetrasBarras: #FFFFFF;
+$colSeleccion:#BF5E66;
+
+@import "navbar";
+@import "mediaEscritorio";
+@import "mediaMobile";
+
+.titulo,
+.tituloNos,
+.tituloMision,
+.tituloProductos,
+.tituloDescripcion,
+.tituloPuntos,
+.tituloProdPun,
+.tituloGaleria,
+.tituloContacto {
+    text-align: center;
+}
+
+h2,
+h3,
+h6 {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}

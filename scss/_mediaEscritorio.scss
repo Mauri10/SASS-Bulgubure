@@ -1,0 +1,308 @@
+
+
+@media screen and (min-width: 769px) {    
+
+    .nav-item {
+        a {
+            color: #FFFFFF !important;
+            font-family: 'Amatic SC', cursive;
+            font-size: 25px;
+            &:hover{
+                color:$colSeleccion !important;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .contenedorIndex {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "imagenes imagenes imagenes imagenes"
+            "texto texto texto texto"
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+    .contenedorNos {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:            
+            "tituloNos tituloNos tituloNos tituloNos"
+            "textoNos textoNos textoNos textoNos"
+            "tituloMision tituloMision tituloMision tituloMision"
+            "textoMision textoMision textoMision textoMision"
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+    .contenedorProductos {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "tituloProductos tituloProductos tituloProductos tituloProductos"
+            "imagenes imagenes imagenes imagenes"
+            "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion"
+            "textoProducto textoProducto textoProducto textoProducto"
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+    .contenedorPuntos {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "tituloPuntos tituloPuntos tituloPuntos tituloPuntos"
+            "mapaGoogle mapaGoogle mapaGoogle mapaGoogle"
+            "tituloProdPun tituloProdPun tituloProdPun tituloProdPun"
+            "puntosMapa puntosMapa puntosMapa puntosMapa"
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+    .contenedorGaleria {       
+        margin-top: 55px; 
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:            
+            "tituloGaleria tituloGaleria tituloGaleria tituloGaleria"
+            "containerCarrusel containerCarrusel containerCarrusel containerCarrusel"            
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+
+    .contenedorContacto {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "tituloContacto tituloContacto tituloContacto tituloContacto"
+            "contacto contacto contacto contacto"
+            "footer footer footer footer";
+        row-gap: 10px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .tituloNos {
+        grid-area: tituloNos;
+    }
+
+    .tituloMision {
+        grid-area: tituloMision;
+    }
+
+    .tituloProductos {
+        grid-area: tituloProductos;
+    }
+
+    .tituloDescripcion {
+        grid-area: tituloDescripcion;
+    }
+
+    .tituloPuntos {
+        grid-area: tituloPuntos;
+    }
+
+    .tituloProdPun {
+        grid-area: tituloProdPun;
+    }
+
+    .tituloGaleria {
+        grid-area: tituloGaleria;
+    }
+
+    .tituloContacto {
+        grid-area: tituloContacto;
+    }
+
+    .img,
+    .imagen-1,
+    .imagen-2 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .imagenes {
+        grid-area: imagenes;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img {
+        border: inset;
+        border-color: $colTentate;
+    }
+
+    .galeria {
+        grid-area: galeria;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .containerCarrusel{
+        grid-area: containerCarrusel;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+
+
+    .texto,
+    .textoNos,
+    .textoMision,
+    .textoProducto,
+    .puntosMapa {
+        width: 90%;
+        justify-self: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.4;        
+    }
+
+    .texto {
+        grid-area: texto;
+
+    }
+
+    .textoNos {
+        grid-area: textoNos;
+    }
+
+    .textoMision {
+        grid-area: textoMision;
+    }
+
+    .textoProducto {
+        grid-area: textoProducto;
+    }
+
+    .mapaGoogle {
+        grid-area: mapaGoogle;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .puntosMapa {
+        grid-area: puntosMapa;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .puntosVenta {
+        li {
+            list-style-type: none;
+        }
+    }  
+
+    .contacto {
+        grid-area: contacto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+
+    .formatContact {
+        font-family: 'Raleway', sans-serif;
+        margin: 10px;
+        width: 240px;
+        padding: 0;
+        font-size: 15px;
+
+    }
+
+    .areaTexto {
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        resize: none;
+        padding: 0;
+        margin: 10px;
+        width: 240px;
+        height: 100px;
+
+    }
+
+    .contactDatos {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.4;
+
+        margin: auto 0;
+        padding-bottom: 50px;
+    }
+
+    .formulario {
+        margin: 10px;
+    }
+
+    .boton {
+        padding: 5px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: $colTentate;
+        border: 1px solid $colTentate;
+        margin: 0 auto;
+        display: block;
+        background-color: $colLetrasBarras;
+        &:hover{
+            background-color: $colTentate;
+            color: $colLetrasBarras;
+        }
+    }
+
+    .logoContacto {
+        display: flex;
+        img {
+            margin-top: 3px;
+            width: 22px;
+            height: 22px;
+    
+        }
+    }
+
+    .textoContacto {
+        margin-left: 10px;
+        a {
+            text-decoration: none;
+        }
+    }
+
+
+
+    .footer {
+        background-color: $colTentate;
+        color: $colLetrasBarras;
+        grid-area: footer;
+        text-align: center;
+        font-size: 22px;
+        padding: 5px;
+        a {
+            text-decoration: none;
+        }
+
+    }
+}
