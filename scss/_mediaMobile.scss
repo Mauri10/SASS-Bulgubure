@@ -1,3 +1,4 @@
+@import "grid";
 @media screen and (max-width: 768px) {
     .nav-item a{
         color: $colLetrasBarras !important;
@@ -24,69 +25,23 @@
     }
     
     .contenedorNos {
-        margin-top: 55px;
-        display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:            
-            "tituloNos tituloNos tituloNos tituloNos"
-            "textoNos textoNos textoNos textoNos"
-            "tituloMision tituloMision tituloMision tituloMision"
-            "textoMision textoMision textoMision textoMision"
-            "footer footer footer footer";
-        row-gap: 10px;
+        @include nosotros();
     }
     
     .contenedorProductos {
-        margin-top: 55px;
-        display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-            "tituloProductos tituloProductos tituloProductos tituloProductos"
-            "imagenes imagenes imagenes imagenes"
-            "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion"
-            "textoProducto textoProducto textoProducto textoProducto"
-            "footer footer footer footer";
-        row-gap: 10px;
+        @include productos();
     }
     
     .contenedorGaleria {       
-        margin-top: 55px; 
-        display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:            
-            "tituloGaleria tituloGaleria tituloGaleria tituloGaleria"
-            "containerCarrusel containerCarrusel containerCarrusel containerCarrusel"            
-            "footer footer footer footer";
-        row-gap: 10px;
+        @include galeria();
     }
     
     .contenedorPuntos {
-        margin-top: 55px;
-        display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-            "tituloPuntos tituloPuntos tituloPuntos tituloPuntos"
-            "mapaGoogle mapaGoogle mapaGoogle mapaGoogle"
-            "tituloProdPun tituloProdPun tituloProdPun tituloProdPun"
-            "puntosMapa puntosMapa puntosMapa puntosMapa"
-            "footer footer footer footer";
-        row-gap: 10px;
+        @include puntosVenta();
     }
     
     .contenedorContacto {
-        margin-top: 55px;
-        display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-            "tituloContacto tituloContacto tituloContacto tituloContacto"
-            "contacto contacto contacto contacto"
-            "footer footer footer footer";
-        row-gap: 10px;
+        @include contacto();
     }
     
     .titulo {
@@ -135,18 +90,21 @@
         grid-column: 1/5;
     }
     
-    .imagen-1 {
-        grid-area: imagen-1;
+    @mixin imagenes() {
         display: flex;
         justify-content: space-around;
         margin-bottom: 5px;
+        
+    }
+
+    .imagen-1 {
+        grid-area: imagen-1;
+        @include imagenes();
     }
     
     .imagen-2 {
         grid-area: imagen-2;
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5px;
+        @include imagenes();
     }
     
     

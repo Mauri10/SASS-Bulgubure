@@ -291,7 +291,7 @@
     grid-area: imagen-2;
     display: flex;
     justify-content: space-around;
-    margin-top: 5px; }
+    margin-bottom: 5px; }
   .img {
     width: 200px;
     height: 200px;

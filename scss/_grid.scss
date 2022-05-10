@@ -1,0 +1,65 @@
+@mixin nosotros() {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:            
+        "tituloNos tituloNos tituloNos tituloNos"
+        "textoNos textoNos textoNos textoNos"
+        "tituloMision tituloMision tituloMision tituloMision"
+        "textoMision textoMision textoMision textoMision"
+        "footer footer footer footer";
+    row-gap: 10px;
+}
+
+@mixin productos() {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "tituloProductos tituloProductos tituloProductos tituloProductos"
+        "imagenes imagenes imagenes imagenes"
+        "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion"
+        "textoProducto textoProducto textoProducto textoProducto"
+        "footer footer footer footer";
+    row-gap: 10px;    
+}
+
+@mixin galeria() {
+    margin-top: 55px; 
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:            
+        "tituloGaleria tituloGaleria tituloGaleria tituloGaleria"
+        "containerCarrusel containerCarrusel containerCarrusel containerCarrusel"            
+        "footer footer footer footer";
+    row-gap: 10px;
+}
+
+@mixin puntosVenta() {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "tituloPuntos tituloPuntos tituloPuntos tituloPuntos"
+        "mapaGoogle mapaGoogle mapaGoogle mapaGoogle"
+        "tituloProdPun tituloProdPun tituloProdPun tituloProdPun"
+        "puntosMapa puntosMapa puntosMapa puntosMapa"
+        "footer footer footer footer";
+    row-gap: 10px;
+}
+
+@mixin contacto() {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "tituloContacto tituloContacto tituloContacto tituloContacto"
+        "contacto contacto contacto contacto"
+        "footer footer footer footer";
+    row-gap: 10px;
+}
