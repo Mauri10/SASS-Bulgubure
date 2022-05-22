@@ -40,43 +40,48 @@
     margin-top: 55px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "titulo titulo titulo titulo" "imagenes imagenes imagenes imagenes" "texto texto texto texto" "footer footer footer footer";
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "titulo titulo titulo titulo" "imagenes imagenes imagenes imagenes" "texto texto texto texto";
     row-gap: 10px; }
   .contenedorNos {
     margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloNos tituloNos tituloNos tituloNos" "textoNos textoNos textoNos textoNos" "tituloMision tituloMision tituloMision tituloMision" "textoMision textoMision textoMision textoMision" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorProductos {
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloProductos tituloProductos tituloProductos tituloProductos" "imagenes imagenes imagenes imagenes" "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion" "textoProducto textoProducto textoProducto textoProducto" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorPuntos {
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloPuntos tituloPuntos tituloPuntos tituloPuntos" "mapaGoogle mapaGoogle mapaGoogle mapaGoogle" "tituloProdPun tituloProdPun tituloProdPun tituloProdPun" "puntosMapa puntosMapa puntosMapa puntosMapa" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorGaleria {
-    margin-top: 55px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel"             "footer footer footer footer";
+    grid-template-areas: "tituloNos tituloNos tituloNos tituloNos" "textoNos textoNos textoNos textoNos" "tituloMision tituloMision tituloMision tituloMision" "textoMision textoMision textoMision textoMision";
     row-gap: 10px; }
-  .contenedorContacto {
+  .contenedorProductos {
     margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloProductos tituloProductos tituloProductos tituloProductos" "imagenes imagenes imagenes imagenes" "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion" "textoProducto textoProducto textoProducto textoProducto";
+    row-gap: 10px; }
+  .contenedorPuntos {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloPuntos tituloPuntos tituloPuntos tituloPuntos" "mapaGoogle mapaGoogle mapaGoogle mapaGoogle" "tituloProdPun tituloProdPun tituloProdPun tituloProdPun" "puntosMapa puntosMapa puntosMapa puntosMapa";
+    row-gap: 10px; }
+  .contenedorGaleria {
+    margin-top: 55px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "tituloContacto tituloContacto tituloContacto tituloContacto" "contacto contacto contacto contacto" "footer footer footer footer";
+    grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel";
+    row-gap: 10px; }
+  .contenedorContacto {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "tituloContacto tituloContacto tituloContacto tituloContacto" "contacto contacto contacto contacto";
     row-gap: 10px; }
   h2 {
     font-size: 70px; }
@@ -132,7 +137,8 @@
     font-size: 20px;
     line-height: 1.4; }
   .texto {
-    grid-area: texto; }
+    grid-area: texto;
+    margin-top: 20px; }
   .textoNos {
     grid-area: textoNos; }
   .textoMision {
@@ -203,7 +209,9 @@
   .footer {
     background-color: #C69B7B;
     color: #FFFFFF;
-    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     text-align: center;
     font-size: 22px;
     padding: 5px; }
@@ -220,45 +228,51 @@
       font-size: 28px; }
   .contenedorIndex {
     margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "titulo titulo titulo titulo" "imagen-1 imagen-1 imagen-1 imagen-1" "imagen-2 imagen-2 imagen-2 imagen-2" "texto texto texto texto" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorNos {
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloNos tituloNos tituloNos tituloNos" "textoNos textoNos textoNos textoNos" "tituloMision tituloMision tituloMision tituloMision" "textoMision textoMision textoMision textoMision" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorProductos {
-    margin-top: 55px;
-    display: grid;
-    grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloProductos tituloProductos tituloProductos tituloProductos" "imagenes imagenes imagenes imagenes" "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion" "textoProducto textoProducto textoProducto textoProducto" "footer footer footer footer";
-    row-gap: 10px; }
-  .contenedorGaleria {
-    margin-top: 55px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel"             "footer footer footer footer";
+    grid-template-areas: "titulo titulo titulo titulo" "imagen-1 imagen-1 imagen-1 imagen-1" "imagen-2 imagen-2 imagen-2 imagen-2" "texto texto texto texto";
     row-gap: 10px; }
-  .contenedorPuntos {
+  .contenedorNos {
     margin-top: 55px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "tituloPuntos tituloPuntos tituloPuntos tituloPuntos" "mapaGoogle mapaGoogle mapaGoogle mapaGoogle" "tituloProdPun tituloProdPun tituloProdPun tituloProdPun" "puntosMapa puntosMapa puntosMapa puntosMapa" "footer footer footer footer";
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloNos tituloNos tituloNos tituloNos" "textoNos textoNos textoNos textoNos" "tituloMision tituloMision tituloMision tituloMision" "textoMision textoMision textoMision textoMision";
     row-gap: 10px; }
-  .contenedorContacto {
+  .contenedorProductos {
     margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloProductos tituloProductos tituloProductos tituloProductos" "imagenes imagenes imagenes imagenes" "tituloDescripcion tituloDescripcion tituloDescripcion tituloDescripcion" "textoProducto textoProducto textoProducto textoProducto";
+    row-gap: 10px; }
+  .contenedorGaleria {
+    margin-top: 55px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "tituloContacto tituloContacto tituloContacto tituloContacto" "contacto contacto contacto contacto" "footer footer footer footer";
+    grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel";
+    row-gap: 10px; }
+  .contenedorPuntos {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "tituloPuntos tituloPuntos tituloPuntos tituloPuntos" "mapaGoogle mapaGoogle mapaGoogle mapaGoogle" "tituloProdPun tituloProdPun tituloProdPun tituloProdPun" "puntosMapa puntosMapa puntosMapa puntosMapa";
+    row-gap: 10px; }
+  .contenedorContacto {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "tituloContacto tituloContacto tituloContacto tituloContacto" "contacto contacto contacto contacto";
     row-gap: 10px; }
   .titulo {
     grid-area: titulo; }
@@ -392,7 +406,9 @@
     padding: 5px 0;
     background-color: #C69B7B;
     color: #FFFFFF;
-    grid-area: footer;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     text-align: center; }
     .footer a {
       text-decoration: none; } }

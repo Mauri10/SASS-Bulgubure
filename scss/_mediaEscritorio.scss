@@ -17,12 +17,11 @@
         margin-top: 55px;
         display: grid;
         grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
         grid-template-areas:
             "titulo titulo titulo titulo"
             "imagenes imagenes imagenes imagenes"
-            "texto texto texto texto"
-            "footer footer footer footer";
+            "texto texto texto texto";
         row-gap: 10px;
     }
 
@@ -136,6 +135,7 @@
 
     .texto {
         grid-area: texto;
+        margin-top: 20px;
 
     }
 
@@ -249,7 +249,10 @@
     .footer {
         background-color: $colTentate;
         color: $colLetrasBarras;
-        grid-area: footer;
+        //grid-area: footer;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
         text-align: center;
         font-size: 22px;
         padding: 5px;

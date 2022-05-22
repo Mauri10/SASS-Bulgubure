@@ -12,15 +12,15 @@
     
     .contenedorIndex {    
         margin-top: 55px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat (4, 1fr);
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "titulo titulo titulo titulo"
             "imagen-1 imagen-1 imagen-1 imagen-1"
             "imagen-2 imagen-2 imagen-2 imagen-2"
-            "texto texto texto texto"
-            "footer footer footer footer";
+            "texto texto texto texto";
         row-gap: 10px;
     }
     
@@ -261,12 +261,15 @@
         }
     }
 
-    .footer {
+    .footer {        
         padding: 5px 0;
         background-color: $colTentate;
         color: $colLetrasBarras;
-        grid-area: footer;
-        text-align: center;
+        //grid-area: footer;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;    
         a {
             text-decoration: none;
         }
