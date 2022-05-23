@@ -391,13 +391,10 @@
       height: 15px; }
   .logoContacto a {
     text-decoration: none; }
-  /*
-    body{
-        position: relative;
-        min-height: 100vh;
-        padding-bottom: 50px;
-    }
-*/
+  body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px; }
   .footer {
     padding: 5px 0;
     background-color: #C69B7B;
@@ -408,11 +405,6 @@
     text-align: center; }
     .footer a {
       text-decoration: none; } }
-
-body {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 50px; }
 
 .titulo,
 .tituloNos,
