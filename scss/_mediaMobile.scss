@@ -12,7 +12,6 @@
     
     .contenedorIndex {    
         margin-top: 55px;
-        margin-bottom: 50px;
         display: grid;
         grid-template-columns: repeat (4, 1fr);
         grid-template-rows: repeat(4, auto);
@@ -260,13 +259,18 @@
             text-decoration: none;
         }
     }
-
+/*
+    body{
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+*/
     .footer {        
         padding: 5px 0;
         background-color: $colTentate;
-        color: $colLetrasBarras;
-        //grid-area: footer;
-        position: fixed;
+        color: $colLetrasBarras;        
+        position:absolute;
         width: 100%;
         bottom: 0;
         text-align: center;    

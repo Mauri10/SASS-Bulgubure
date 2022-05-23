@@ -45,7 +45,6 @@
     row-gap: 10px; }
   .contenedorNos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -53,7 +52,6 @@
     row-gap: 10px; }
   .contenedorProductos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -61,7 +59,6 @@
     row-gap: 10px; }
   .contenedorPuntos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -69,15 +66,13 @@
     row-gap: 10px; }
   .contenedorGaleria {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel";
     row-gap: 10px; }
   .contenedorContacto {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(2, auto);
@@ -209,7 +204,7 @@
   .footer {
     background-color: #C69B7B;
     color: #FFFFFF;
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
     text-align: center;
@@ -228,7 +223,6 @@
       font-size: 28px; }
   .contenedorIndex {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -236,7 +230,6 @@
     row-gap: 10px; }
   .contenedorNos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -244,7 +237,6 @@
     row-gap: 10px; }
   .contenedorProductos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -252,15 +244,13 @@
     row-gap: 10px; }
   .contenedorGaleria {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "tituloGaleria tituloGaleria tituloGaleria tituloGaleria" "containerCarrusel containerCarrusel containerCarrusel containerCarrusel";
     row-gap: 10px; }
   .contenedorPuntos {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(4, auto);
@@ -268,7 +258,6 @@
     row-gap: 10px; }
   .contenedorContacto {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: repeat(2, auto);
@@ -402,16 +391,28 @@
       height: 15px; }
   .logoContacto a {
     text-decoration: none; }
+  /*
+    body{
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+*/
   .footer {
     padding: 5px 0;
     background-color: #C69B7B;
     color: #FFFFFF;
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
     text-align: center; }
     .footer a {
       text-decoration: none; } }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px; }
 
 .titulo,
 .tituloNos,

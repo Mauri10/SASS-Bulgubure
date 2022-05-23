@@ -11,6 +11,13 @@ $colSeleccion:#BF5E66;
 @import "mediaEscritorio";
 @import "mediaMobile";
 
+
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
 .titulo,
 .tituloNos,
 .tituloMision,

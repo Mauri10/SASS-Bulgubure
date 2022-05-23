@@ -1,6 +1,5 @@
 @mixin nosotros() {
-    margin-top: 55px;
-    margin-bottom: 50px;
+    margin-top: 55px;    
     display: grid;
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -14,7 +13,6 @@
 
 @mixin productos() {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -28,10 +26,9 @@
 
 @mixin galeria() {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:            
         "tituloGaleria tituloGaleria tituloGaleria tituloGaleria"
         "containerCarrusel containerCarrusel containerCarrusel containerCarrusel";
@@ -40,7 +37,6 @@
 
 @mixin puntosVenta() {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -54,7 +50,6 @@
 
 @mixin contacto() {
     margin-top: 55px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat(2, auto);
