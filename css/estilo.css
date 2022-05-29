@@ -133,6 +133,7 @@
     line-height: 1.4; }
   .texto {
     grid-area: texto;
+    text-align: center;
     margin-top: 20px; }
   .textoNos {
     grid-area: textoNos; }
@@ -211,6 +212,16 @@
     font-size: 22px;
     padding: 5px; }
     .footer a {
+      text-decoration: none; }
+  .footerPuntos {
+    background-color: #C69B7B;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding: 5px; }
+    .footerPuntos a {
       text-decoration: none; } }
 
 @media screen and (max-width: 768px) {
@@ -395,7 +406,7 @@
     position: relative;
     min-height: 100vh;
     padding-bottom: 50px; }
-  .footer {
+  .footer, .footerPuntos {
     padding: 5px 0;
     background-color: #C69B7B;
     color: #FFFFFF;
@@ -403,7 +414,7 @@
     width: 100%;
     bottom: 0;
     text-align: center; }
-    .footer a {
+    .footer a, .footerPuntos a {
       text-decoration: none; } }
 
 .titulo,
